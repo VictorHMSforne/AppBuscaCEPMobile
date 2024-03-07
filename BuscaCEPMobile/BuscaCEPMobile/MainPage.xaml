@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BuscaCEPMobile.MainPage">
+
+    <StackLayout BackgroundColor="#FFBF00" Padding="30" Spacing="30"><!--Spacing é o espaço entre cada elemento e o padding é a distância da borda -->
+        <Image Source="Correios"/>
+        <Entry Placeholder="Digite o CEP, somente números: " PlaceholderColor="#FFBF00" BackgroundColor="White" x:Name="txtCEP" Keyboard="Numeric"/> <!--O Entry é o mesmo que INPUT, só que no XAML-->
+        <Button Text="BUSCAR CEP" TextColor="White" BackgroundColor="#00416B" x:Name="btCEP"/>
+        <Label Text="" VerticalOptions="Center" HorizontalOptions="Center" x:Name="lblResultado"/>
+
+    </StackLayout>
+
+</ContentPage>
